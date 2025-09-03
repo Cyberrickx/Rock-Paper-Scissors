@@ -7,6 +7,7 @@ const result_div = document.getElementById("result");
 const rock_div = document.getElementById("rock");
 const paper_div = document.getElementById("paper");
 const scissors_div = document.getElementById("scissors");
+let indicator = document.querySelectorAll(".choice");
 
 function genCompChoice() {
   const choices = ["rock", "paper", "scissors"];
@@ -24,7 +25,8 @@ function lose() {
   compScore_span.textContent = compScore;
 }
 
-function draw() {}
+function draw() {   
+}
 
 function game(userChoice) {
   const compChoice = genCompChoice();
@@ -43,7 +45,7 @@ function game(userChoice) {
       win();
       break;
     case "rockpaper":
-      result_div.textContent = "Paper cover rock. You lose!";
+      result_div.textContent = "Paper covers rock. You lose!";
       lose();
       break;
     case "paperscissors":
