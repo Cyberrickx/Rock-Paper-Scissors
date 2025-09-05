@@ -1,7 +1,7 @@
 
 # Rock Paper Scissors Game
 
-A modern, interactive Rock Paper Scissors game built with HTML, CSS, and JavaScript.
+A fun Rock Paper Scissors game I made to practice coding! You play against the computer and it keeps score.
 
 
 ## Tech Stack
