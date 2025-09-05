@@ -8,6 +8,7 @@ const rock_div = document.getElementById("rock");
 const paper_div = document.getElementById("paper");
 const scissors_div = document.getElementById("scissors");
 let indicator = document.querySelectorAll(".choice");
+const resetButton = document.getElementById("reset-btn");
 
 function genCompChoice() {
   const choices = ["rock", "paper", "scissors"];
@@ -70,6 +71,14 @@ function game(userChoice) {
       break;
   }
 }
+
+function resetGame() {
+  userScore_span.textContent = "0";
+  compScore_span.textContent = "0";
+  result_div.textContent = "Start!";
+}
+
+resetButton.addEventListener("click", resetGame);
 
 rock_div.addEventListener("click", function () {
   game("rock");

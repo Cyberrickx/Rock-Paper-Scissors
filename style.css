@@ -6,8 +6,14 @@
   box-sizing: border-box;
 }
 body {
+  width: 100vw;
   font-family: Poppins;
   background-color: #24272E;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 
   header {
     width: 100%;
@@ -19,7 +25,7 @@ body {
   }
 
   .score-board {
-    width: 180px;
+    width: 200px;
     margin: 20px auto;
     border: 3px solid white;
     text-align: center;
@@ -29,10 +35,10 @@ body {
     color: white;
     
     .badge {
-      background-color: red;
+      background-color: #ff4d4d;
       width: fit-content;
       color: white;
-      font-size: 15px;
+      font-size: 16px;
       padding: 2px 3px;
       border-radius: 5px;
     }
@@ -91,6 +97,18 @@ body {
     margin: auto;
     font-size: 20px;
     font-weight: 600;
+  }
+
+  #reset-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff4d4d;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
   }
 }
 
